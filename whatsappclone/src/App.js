@@ -18,8 +18,8 @@ function App() {
  
 
   useEffect(() => {
-    const pusher = new Pusher(process.env.REACT_APP_PUSHER_APP_KEY, {
-      cluster: process.env.REACT_APP_PUSHER_APP_CLUSTER
+    const pusher = new Pusher("23549351ebb1868dd70b", {
+      cluster: "ap2"
     })
 
     const channel = pusher.subscribe('messages')
