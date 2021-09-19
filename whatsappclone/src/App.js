@@ -25,12 +25,12 @@ function App() {
     const channel = pusher.subscribe('messages')
     channel.bind('inserted', (newMessage) => {
       setMessages([...messages, newMessage])
+
+    })
+
       console.log("unsubscribe")
       channel.unbind_all()
       channel.unsubscribe()
-    })
-
-    
 
     
 
