@@ -29,7 +29,7 @@ function App() {
     })
 
     return () => {
-      console.log("unsubscribe")
+      
       channel.unbind_all()
       channel.unsubscribe()
     }
