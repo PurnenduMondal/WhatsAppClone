@@ -46,7 +46,7 @@ db.once('open', () =>{
                 received: messageDetails.received
             }).then(console.log).catch(e=> console.log(e))
         } else {
-            console.log('Error triggering Pusher')
+            console.log('Error triggering Pusher.')
         }
     })
 })
