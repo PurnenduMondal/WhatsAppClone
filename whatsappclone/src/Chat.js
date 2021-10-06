@@ -24,6 +24,8 @@ function Chat({messages}) {
 
         })
         setInput('')
+        window.location.reload(false);
+
     }
 
     return (
